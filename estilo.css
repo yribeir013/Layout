@@ -1,0 +1,33 @@
+/*
+    Created on : 19/12/2022, 18:14:33
+    Author     : 182200148
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana;
+    margin: 0;
+}
+nav{
+    text-align: center;
+    background: #333;
+    width: 100%;
+}
+nav a{
+    transition: 400ms;
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav li{
+    list-style-type: none;
+    display: inline;
+    color: wheat;
+}
