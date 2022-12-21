@@ -1,33 +1,82 @@
-/*
-    Created on : 19/12/2022, 18:14:33
-    Author     : 182200148
-*/
-
 *{
-    box-sizing: border-box;
-}
+box-sizing: border-box;
 
+}
 body{
-    font-family: Verdana;
-    margin: 0;
+font-family: Verdana;
+ margin: 0;
 }
 nav{
-    text-align: center;
-    background: #333;
-    width: 100%;
+text-align: center;
+background:#CCCCCC;
+width: 100%;
+height: 3rem;
 }
 nav a{
-    transition: 400ms;
-    text-decoration: none;
-    color: white;
+transition: 400ms;
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+nav a:hover{
+color:#2F4F4F;
+text-decoration: underline;
+font-size: 150%;
 }
 nav ul{
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+margin: 0;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 nav li{
-    list-style-type: none;
-    display: inline;
-    color: wheat;
+list-style-type: none;
+display: inline;
+color: blue;
+}
+header{
+padding: 60px;
+text-align: center;
+background-color:#2F4F4F;
+color: black;
+}
+.container{
+display: flex;
+flex-wrap: wrap;
+}
+.esquerda{
+flex: 30%;
+background-color:#808080;
+padding: 20px;
+}
+.conteudo{
+flex: 70%;
+padding: 20px;
+}
+.imgFake{
+background-color:#CCCCCC;
+width: 100%;
+padding: 20px;
+}
+.footer{
+flex: 100%;
+padding: 20px;
+background-color: #808080;
+text-align: center;
+color:black;
+}
+@media screen and (max-width: 700px){
+   .container, nav{
+   flex-direction:column; 
+    }    
+    header{
+        background-color: green;
+    }
+}
+@media screen and (max-width: 400px){
+    nav{
+        height: 100%;
+    }
+    nav li{
+        display: block;
+    }
 }
