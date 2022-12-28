@@ -47,7 +47,8 @@
                 </p>
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d431.72347374529244!2d-51.2191276!3d-30.0429454!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978567f17f28d%3A0x2c2c5272bacf4d3a!2sSenac%20Tech!5e0!3m2!1spt-BR!2sbr!4v1672075749865!5m2!1spt-BR!2sbr" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            </div>
+           
                 <div class="conteudo">
                     <h2>Formulário</h2>
                     <form name="formUser">
@@ -96,12 +97,15 @@
                             <div class="input">
                                 <input type="radio" name="tipoPessoa"id="tipoCPF"
                                        onclick="document.getElementById('divCPF').style.visibility = 'visible';
-                                       document.getElementById('divCNPJ').style.visibility = 'hidden';">
+                                               document.getElementById('divCNPJ').style.visibility = 'hidden';
+                                               document.getElementById('cnpj').value = '';">
                                 <label for="tipoCPF">CPF</label>
 
                                 <input type="radio" name="tipoPessoa"id="tipoCNPJ" 
                                        onclick="document.getElementById('divCPF').style.visibility = 'hidden';
-                                       document.getElementById('divCNPJ').style.visibility = 'visible';">
+                                               document.getElementById('divCNPJ').style.visibility = 'visible';
+                                               document.getElementById('cpf').value = '';">
+
                                 <label for="tipoCNPJ">CNPJ</label>
                             </div>
                         </div>
