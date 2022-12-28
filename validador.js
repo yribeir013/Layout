@@ -58,3 +58,16 @@ function mascaraCNPJ(i){
         i.value = i.value + "-";
 }
 }
+function validar (){
+    var nome = formUser.nome.value;
+    
+    
+    if (nome == "" || nome.length <= 3) {
+        alert("Informe o nome completo");
+        formUser.nome.focus();
+        return false;
+        
+    } 
+   
+    
+}
