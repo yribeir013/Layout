@@ -95,7 +95,7 @@ function validar (){
         formUser.endereco.focus();
         return false;
         
-    } 
+    }  
 
     if(cpf == "" && cnpj == "" ){
         alert("Selecione um documento");
@@ -123,14 +123,12 @@ function validar (){
         formUser.senha.focus();
         return false;
 }
-
-    if (senha != "" && confirmaSenha != "") {
+    if (senha != "" && confirmaSenha == "") {
         if(senha != confirmaSenha){
         alert("Senhas diferentes!");
         formUser.senha.focus();
         return false;
         
     }
-
     }
-}
+    }
